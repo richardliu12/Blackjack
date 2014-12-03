@@ -25,7 +25,7 @@ public enum Rank
     /**
     * Constructor specifying value of card.
     */
-    public Rank(int value){
+    private Rank(int value){
         this.value = value;
     }
 

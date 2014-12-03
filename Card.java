@@ -18,14 +18,13 @@ public class Card
         this.suit = suit;
     }
 
-    @Override
     public boolean equals(Card card){
-        return (this.rank==card.getRank)&&(this.suit==card.getSuit);
+        return (this.rank==card.getRank())&&(this.suit==card.getSuit());
     }
 
     @Override
     public String toString(){
-        return (rank.toString + " " + suit.toString);
+        return (rank.toString() + " " + suit.toString());
     }
 
     /**
@@ -40,5 +39,12 @@ public class Card
     */
     public Rank getRank(){
         return rank;
+    }
+
+    /**
+    * Returns value of card.
+    */
+    public int getValue(){
+        return rank.getValue();
     }
 }

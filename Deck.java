@@ -27,7 +27,7 @@ public class Deck
     /**
     * Returns the n-th card in the deck.
     */
-    public Card getCard(int n){
+    public Card get(int n){
         return cards.get(n);
     }
 }

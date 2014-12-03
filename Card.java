@@ -24,7 +24,7 @@ public class Card
 
     @Override
     public String toString(){
-        return (rank.toString() + " " + suit.toString());
+        return (rank.toString() + " of " + suit.toString());
     }
 
     /**

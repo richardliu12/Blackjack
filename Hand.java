@@ -53,18 +53,4 @@ public class Hand
         }
         return text;
     }
-    
-    public static void main(String args[])
-    {
-        Deck deck = new Deck();
-        List<Card> deal = new ArrayList<Card>();
-        
-        deal.add(deck.getCard(0));
-        deal.add(deck.getCard(1));
-        deal.add(deck.getCard(2));
-        deal.add(deck.getCard(3));
-        Hand hand = new Hand(deal);
-        System.out.println(hand.toString());
-        System.out.println(hand.getValue());
-    }
 }
